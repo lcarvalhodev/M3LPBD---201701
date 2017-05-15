@@ -42,7 +42,7 @@ public class ConexaoMySQL {
             //ajuste o username e password de acordo com o que voce utiliza para 
             //acessar o banco
             String username = "root";             
-            String password = "mars2809";      
+            String password = "root";      
             
             connection = DriverManager.getConnection(url,
                     username, password);

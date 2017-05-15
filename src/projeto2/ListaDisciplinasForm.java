@@ -1,3 +1,17 @@
+//******************************************************
+
+//Instituto Federal de São Paulo - Campus Sertãozinho
+
+//Disciplina......: M2LPBA
+
+//Programação de Computadores e Dispositivos Móveis
+
+//Aluno...........: Leandro Almeida de Carvalho
+//Universidade....: Universidade Federal do Ceará
+//Curso...........: Ciência da Computação
+
+//******************************************************
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -33,6 +47,7 @@ public class ListaDisciplinasForm extends javax.swing.JFrame {
             
             ResultSet res = con.createStatement().executeQuery(cmd);
             
+            // loop utilizado para pegar cada coluna retornada e salvar em uma variável
             while(res.next()){
                 int id = res.getInt("id_disciplina");
                 String nome = res.getString("nome_disciplina");
@@ -41,6 +56,7 @@ public class ListaDisciplinasForm extends javax.swing.JFrame {
                 int periodo = res.getInt("periodo_disciplina");
                 int vagas = res.getInt("num_vagas_disciplina");
                 
+                // vector criado para armazenar informações vindas do banco de dados
                 Vector v  = new Vector();
             
                 v.add(nome);

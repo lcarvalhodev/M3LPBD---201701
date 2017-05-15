@@ -1,3 +1,17 @@
+//******************************************************
+
+//Instituto Federal de São Paulo - Campus Sertãozinho
+
+//Disciplina......: M2LPBA
+
+//Programação de Computadores e Dispositivos Móveis
+
+//Aluno...........: Leandro Almeida de Carvalho
+//Universidade....: Universidade Federal do Ceará
+//Curso...........: Ciência da Computação
+
+//******************************************************
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -37,6 +51,7 @@ public class DeleteForm extends javax.swing.JFrame {
             //Utilização do Result Set para que possamos interpretar corretamente as colunas do Banco de Dados
             ResultSet res = con.createStatement().executeQuery(cmd);
             
+            // loop utilizado para preencher o combo box
             while(res.next()){
                 String nome = res.getString("nome_disciplina");
                 //Adição de elementos ao combo box
