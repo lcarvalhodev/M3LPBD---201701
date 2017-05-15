@@ -2,7 +2,7 @@
 
 //Instituto Federal de São Paulo - Campus Sertãozinho
 
-//Disciplina......: M2LPBA
+//Disciplina......: M3LPBD
 
 //Programação de Computadores e Dispositivos Móveis
 
